@@ -14,17 +14,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
-        guard let winScene = (scene as? UIWindowScene) else { return }
-        window = UIWindow(windowScene: winScene)
-        self.window?.makeKeyAndVisible()
+        guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        //
+        let window = UIWindow(windowScene: windowScene)
+        
+        let telaAzulController = TelaAzulController()
+        
+        window.rootViewController = TelaAzulController()
+        window.makeKeyAndVisible()
+        self.window = window
+        
         let navigationController = UINavigationController()
         self.window?.rootViewController = navigationController
-        
-        //
         let coordinator = TelaAzulCoordinator(navigationController: navigationController)
         coordinator.start()
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

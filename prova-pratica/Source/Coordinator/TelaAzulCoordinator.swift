@@ -9,31 +9,21 @@ import Foundation
 import UIKit
 
 class TelaAzulCoordinator: Coordinator {
-    var navigationController: UINavigationController
+
+    var navigationController = UINavigationController()
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
     
     func start() {
-        
+        let telaVerdeCoordinator = TelaVerdeCoordinator(navigationController: self.navigationController)
         let viewController = TelaAzulController()
-        
-        
         viewController.onGreenTap = {
-            self.gotoTelaVerde()
+            telaVerdeCoordinator.start()
         }
         
-
-        
         self.navigationController.pushViewController(viewController, animated: true)
-    }
+    }    
     
-    func gotoTelaVerde() {
-        let coordinator = TelaVerdeCoordinator(navigationController: self.navigationController)
-        
-        coordinator.start()
-    }
-    
-
 }

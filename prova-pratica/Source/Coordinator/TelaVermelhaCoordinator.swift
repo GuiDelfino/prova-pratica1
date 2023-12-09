@@ -1,5 +1,5 @@
 //
-//  TelaVerdeCoordinator.swift
+//  TelaVerdeView.swift
 //  prova-pratica
 //
 //  Created by IFB-BIOTIC-07 on 08/12/23.
@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class TelaVerdeCoordinator: Coordinator {
+class TelaVermelhaCoordinator: Coordinator {
     var navigationController = UINavigationController()
     
     init(navigationController: UINavigationController) {
@@ -16,19 +16,21 @@ class TelaVerdeCoordinator: Coordinator {
     }
     
     func start() {
-        let telaVermelhaCoordinator = TelaVermelhaCoordinator(navigationController: self.navigationController)
-        let viewController = TelaVerdeController()
-        viewController.onRedTap = {
-            telaVermelhaCoordinator.start()
+        let telaAzulCoordinator = TelaAzulCoordinator(navigationController: self.navigationController)
+        let viewController = TelaVermelhaController()
+        viewController.onBlueTap = {
+            telaAzulCoordinator.start()
         }
-        viewController.onBluetap = {
-            self.backToBlueScreen()
+        viewController.onGreenTap = {
+            self.backToTelaVerde()
         }
         
+        
         self.navigationController.pushViewController(viewController, animated: true)
+        
+        
     }
-    func backToBlueScreen() {
+    func backToTelaVerde() {
         self.navigationController.popViewController(animated: true)
     }
-    
 }

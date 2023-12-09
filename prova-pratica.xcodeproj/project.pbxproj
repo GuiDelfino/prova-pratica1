@@ -10,14 +10,12 @@
 		C0EC0B5E2B2345420083C2A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EC0B5D2B2345420083C2A1 /* AppDelegate.swift */; };
 		C0EC0B602B2345420083C2A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EC0B5F2B2345420083C2A1 /* SceneDelegate.swift */; };
 		C0EC0B622B2345420083C2A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EC0B612B2345420083C2A1 /* ViewController.swift */; };
-		C0EC0B652B2345420083C2A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0EC0B632B2345420083C2A1 /* Main.storyboard */; };
 		C0EC0B672B2345520083C2A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0EC0B662B2345520083C2A1 /* Assets.xcassets */; };
 		C0EC0B6A2B2345520083C2A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0EC0B682B2345520083C2A1 /* LaunchScreen.storyboard */; };
 		C0EC0B752B2345530083C2A1 /* prova_praticaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EC0B742B2345530083C2A1 /* prova_praticaTests.swift */; };
 		C0EC0B7F2B2345530083C2A1 /* prova_praticaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EC0B7E2B2345530083C2A1 /* prova_praticaUITests.swift */; };
 		C0EC0B812B2345530083C2A1 /* prova_praticaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EC0B802B2345530083C2A1 /* prova_praticaUITestsLaunchTests.swift */; };
 		C0EC0B902B2347240083C2A1 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EC0B8F2B2347240083C2A1 /* Coordinator.swift */; };
-		C0EC0B982B2348C80083C2A1 /* ButtonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EC0B972B2348C80083C2A1 /* ButtonDefault.swift */; };
 		C0EC0BA12B234B870083C2A1 /* TelaAzulController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EC0BA02B234B870083C2A1 /* TelaAzulController.swift */; };
 		C0EC0BA32B234B990083C2A1 /* TelaAzulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EC0BA22B234B990083C2A1 /* TelaAzulView.swift */; };
 		C0EC0BA52B234BAF0083C2A1 /* TelaVermelhaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EC0BA42B234BAF0083C2A1 /* TelaVermelhaController.swift */; };
@@ -26,6 +24,8 @@
 		C0EC0BAB2B234BE70083C2A1 /* TelaVerdeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EC0BAA2B234BE70083C2A1 /* TelaVerdeView.swift */; };
 		C0EC0BAD2B234E5F0083C2A1 /* TelaAzulCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EC0BAC2B234E5F0083C2A1 /* TelaAzulCoordinator.swift */; };
 		C0EC0BAF2B234F2D0083C2A1 /* TelaVerdeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EC0BAE2B234F2D0083C2A1 /* TelaVerdeCoordinator.swift */; };
+		F95B0F4A2B242D10004B4223 /* TelaVermelhaCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95B0F492B242D10004B4223 /* TelaVermelhaCoordinator.swift */; };
+		F9B0D4D22B2443BD001CD35A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9B0D4D12B2443BD001CD35A /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,6 @@
 		C0EC0B5D2B2345420083C2A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0EC0B5F2B2345420083C2A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C0EC0B612B2345420083C2A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C0EC0B642B2345420083C2A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C0EC0B662B2345520083C2A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0EC0B692B2345520083C2A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0EC0B6B2B2345520083C2A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,7 +59,6 @@
 		C0EC0B7E2B2345530083C2A1 /* prova_praticaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prova_praticaUITests.swift; sourceTree = "<group>"; };
 		C0EC0B802B2345530083C2A1 /* prova_praticaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prova_praticaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C0EC0B8F2B2347240083C2A1 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		C0EC0B972B2348C80083C2A1 /* ButtonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDefault.swift; sourceTree = "<group>"; };
 		C0EC0BA02B234B870083C2A1 /* TelaAzulController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaAzulController.swift; sourceTree = "<group>"; };
 		C0EC0BA22B234B990083C2A1 /* TelaAzulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaAzulView.swift; sourceTree = "<group>"; };
 		C0EC0BA42B234BAF0083C2A1 /* TelaVermelhaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaVermelhaController.swift; sourceTree = "<group>"; };
@@ -69,6 +67,8 @@
 		C0EC0BAA2B234BE70083C2A1 /* TelaVerdeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaVerdeView.swift; sourceTree = "<group>"; };
 		C0EC0BAC2B234E5F0083C2A1 /* TelaAzulCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaAzulCoordinator.swift; sourceTree = "<group>"; };
 		C0EC0BAE2B234F2D0083C2A1 /* TelaVerdeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaVerdeCoordinator.swift; sourceTree = "<group>"; };
+		F95B0F492B242D10004B4223 /* TelaVermelhaCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaVermelhaCoordinator.swift; sourceTree = "<group>"; };
+		F9B0D4D12B2443BD001CD35A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,8 +150,8 @@
 				C0EC0B5F2B2345420083C2A1 /* SceneDelegate.swift */,
 				C0EC0B5D2B2345420083C2A1 /* AppDelegate.swift */,
 				C0EC0B662B2345520083C2A1 /* Assets.xcassets */,
-				C0EC0B632B2345420083C2A1 /* Main.storyboard */,
 				C0EC0B682B2345520083C2A1 /* LaunchScreen.storyboard */,
+				F9B0D4D12B2443BD001CD35A /* Main.storyboard */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -159,7 +159,6 @@
 		C0EC0B8E2B2345B40083C2A1 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				C0EC0B942B2347580083C2A1 /* Infrastructure */,
 				C0EC0B922B2347390083C2A1 /* Controller */,
 				C0EC0B912B23472E0083C2A1 /* Coordinator */,
 			);
@@ -172,6 +171,7 @@
 				C0EC0B8F2B2347240083C2A1 /* Coordinator.swift */,
 				C0EC0BAC2B234E5F0083C2A1 /* TelaAzulCoordinator.swift */,
 				C0EC0BAE2B234F2D0083C2A1 /* TelaVerdeCoordinator.swift */,
+				F95B0F492B242D10004B4223 /* TelaVermelhaCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -184,22 +184,6 @@
 				C0EC0B9A2B234A630083C2A1 /* TelaVerde */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		C0EC0B942B2347580083C2A1 /* Infrastructure */ = {
-			isa = PBXGroup;
-			children = (
-				C0EC0B992B2348F60083C2A1 /* Components */,
-			);
-			path = Infrastructure;
-			sourceTree = "<group>";
-		};
-		C0EC0B992B2348F60083C2A1 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				C0EC0B972B2348C80083C2A1 /* ButtonDefault.swift */,
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 		C0EC0B9A2B234A630083C2A1 /* TelaVerde */ = {
@@ -333,9 +317,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9B0D4D22B2443BD001CD35A /* Main.storyboard in Resources */,
 				C0EC0B6A2B2345520083C2A1 /* LaunchScreen.storyboard in Resources */,
 				C0EC0B672B2345520083C2A1 /* Assets.xcassets in Resources */,
-				C0EC0B652B2345420083C2A1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,8 +346,8 @@
 			files = (
 				C0EC0BA92B234BD40083C2A1 /* TelaVerdeController.swift in Sources */,
 				C0EC0BA72B234BC00083C2A1 /* TelaVermelhaView.swift in Sources */,
+				F95B0F4A2B242D10004B4223 /* TelaVermelhaCoordinator.swift in Sources */,
 				C0EC0BA52B234BAF0083C2A1 /* TelaVermelhaController.swift in Sources */,
-				C0EC0B982B2348C80083C2A1 /* ButtonDefault.swift in Sources */,
 				C0EC0B902B2347240083C2A1 /* Coordinator.swift in Sources */,
 				C0EC0BA32B234B990083C2A1 /* TelaAzulView.swift in Sources */,
 				C0EC0BAD2B234E5F0083C2A1 /* TelaAzulCoordinator.swift in Sources */,
@@ -409,14 +393,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C0EC0B632B2345420083C2A1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C0EC0B642B2345420083C2A1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C0EC0B682B2345520083C2A1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -562,6 +538,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -590,6 +567,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

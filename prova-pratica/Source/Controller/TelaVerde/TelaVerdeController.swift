@@ -10,36 +10,28 @@ import UIKit
 
 class TelaVerdeController: UIViewController {
     
-    var onBlueTap:(() -> Void)?
+    var onBluetap: (() -> Void)?
     var onRedTap: (() -> Void)?
     
-    lazy var telaVerde: TelaVerdeView = {
-        let telaVerde = TelaVerdeView()
-        
-        telaVerde.onBlueTap = {[weak self] in
-            if let self = self {
-                self.onBlueTap?()
-            }
-        }
-        
-        telaVerde.onRedTap = {[weak self] in
-            if let self = self {
-                self.onRedTap?()
-            }
-        }
-        
-        return telaVerde
-    }()
+    let telaVerde = TelaVerdeView()
     
     override func loadView() {
-        self.view = telaVerde
+        view = telaVerde
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         view.backgroundColor = .green
-        self.title = "Entrar"
+        super.viewDidLoad()
+        telaVerde.redButton.addTarget(self, action: #selector(telaVermelha), for: .touchUpInside)
+        telaVerde.blueButton.addTarget(self, action: #selector(telaAzul), for: .touchUpInside)
+
     }
     
+    @objc private func telaVermelha() {
+        onRedTap?()
+    }
     
+    @objc private func telaAzul() {
+        onBluetap?()
+    }
 }

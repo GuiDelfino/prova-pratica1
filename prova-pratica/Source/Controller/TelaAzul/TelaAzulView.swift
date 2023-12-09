@@ -9,50 +9,46 @@ import Foundation
 import UIKit
 
 class TelaAzulView: UIView {
-    var onGreenTap:(() -> Void)?
     
-    
-    lazy var button: ButtonDefault = {
-        let button = ButtonDefault(title: "Ir para a tela verde")
-        button.title(for: .normal)
-        button.addTarget(self, action: #selector(self.greenTap), for: .touchUpInside)
-
-        return button
-    }()
-    
-    func addConstraints() {
-        
-        
-        button.widthAnchor.constraint(equalToConstant: 250).isActive = true
-        button.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        button.topAnchor.constraint(equalTo: self.topAnchor, constant: 228).isActive = true
-        button.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 57).isActive = true
-    }
-    
-
-    
-
-    @objc
-    private func greenTap() {
-        onGreenTap?()
-    }
     
     override init(frame: CGRect) {
         super.init(frame: CGRectZero)
-        addSubview(button)
-        addConstraints()
+        self.backgroundColor = .blue
+        setUpVisualElements()
+    }
+    
+    
+    var greenButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Tela Verde", for: .normal)
+        button.setTitleColor(.systemGreen, for: .normal)
+        button.layer.cornerRadius = 12
+        button.backgroundColor = .white
+        button.translatesAutoresizingMaskIntoConstraints = false
         
+        return button
+    }()
+    
+    func setUpVisualElements() {
 
+        addSubview(greenButton)
+ 
         
+        NSLayoutConstraint.activate([
+            
+            greenButton.topAnchor.constraint(equalTo: self.topAnchor, constant: 250),
+            greenButton.widthAnchor.constraint(equalToConstant: 275),
+            greenButton.heightAnchor.constraint(equalToConstant: 60),
+            greenButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 50),
+            greenButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -50),
+            
+            
+        ])
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-
-
-
 
 
     
